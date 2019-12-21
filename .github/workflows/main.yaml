@@ -18,18 +18,18 @@ jobs:
       - name: Install npm packages
         shell: bash
         run: |
-            npm install
+          npm install
 
       - name: Build app
         shell: bash
         run: |
-        npm run build
+          npm run build
 
       - name: Test app
         shell: bash
         run: |
-        npm run test
-        
+          npm run test
+
       - name: Publish app
         uses: Azure/cli@v1.0.0
         with:
